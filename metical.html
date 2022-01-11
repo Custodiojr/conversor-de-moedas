@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversor</title>
+    <style>
+        body{
+            text-align: center;
+            padding-top: 400px;
+            background-color: whitesmoke;
+        }
+        #txt{
+            background-color: rgb(233, 229, 215);
+            height: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      
+        div > p {
+           display: none;
+       }
+
+       div:hover > p{
+           display: block;
+           color: whitesmoke;
+           background-color: tomato;
+           width: 200px;
+           margin: auto;
+       }
+
+       div:hover{
+          color: brown; 
+          
+       } 
+       
+        
+        
+    </style>
+</head>
+<body>
+   <p>
+       <input type="search" size="60" placeholder="Converter metical para dolar.." name="txt" on id="txt">
+       
+   </p>
+   
+<div> Moedas 	&#9660; :
+    <p> <a href=""> Metical  </a></p>
+</div>
+   
+   <p>
+   <!---- <label>Moeda:</label>
+    <a href="metical.html" id="moedas"> Metical</a>
+    <select name="Moeda" onchange="conVerter(this.value)">
+        <option onclick="metical()" selected value=" "> Metical </a></option>
+        <option value="USD"> Dolar </option>
+        <option value="RZD" > Rand </option>
+        <option value="EUR"> Euro </option>
+    </select>-->
+</p>
+<p>
+    <button onclick="converter()">Converter</button>
+</p>
+<p>
+    <div id="res">
+
+    </div>
+</p>
+<script>
+ let a = document.getElementById('moedas')
+ a.addEventListener('mouseenter', entrar() )
+ function entrar(){
+     a.innerHTML = 'ent'
+     
+ }
+
+function converter(){
+    console.log('funcionou')
+}
+
+</script>
+  
+</body>
+</html>
