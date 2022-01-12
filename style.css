@@ -1,0 +1,47 @@
+@charset "UTF-8";
+*{ margin: 0;
+
+}
+
+body{
+    text-align: center;
+    padding-top: 200px;
+    background-color: whitesmoke;
+}
+#txt{
+    background-color: rgb(241, 232, 197);
+    height: 4vw;
+    border: none;
+    width: 50vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    text-align: right;
+    font-size: 2rem;
+}
+div{
+    padding-top: 1vw;
+}
+
+div > p {
+   display: none;
+}
+
+div:hover > p{
+   display: block;
+   color: whitesmoke;
+   background-color: whitesmoke;
+   width: 200px;
+   margin: auto;
+   
+}
+
+div:hover{
+  color: brown; 
+  
+} 
+#button{
+  padding-top: 1vw;
+}
+
+footer{
+   padding-top: 200px;
+} 
