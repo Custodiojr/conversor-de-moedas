@@ -8,6 +8,10 @@ body{
     padding-top: 200px;
     background-color: whitesmoke;
 }
+h1{
+    color: rgb(190, 150, 49);
+    padding-bottom: 10px;
+}
 #txt{
     background-color: rgb(241, 232, 197);
     height: 4vw;
