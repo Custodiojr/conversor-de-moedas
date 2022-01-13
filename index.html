@@ -38,6 +38,7 @@
 
     </div>
 </p>
+
 <footer>
     &copy; Todos os direitos reservados <br> JANEIRO DE 2022
 </footer>
@@ -60,6 +61,13 @@
             //para formatar os valores cambiados, ou seja, colocar as virgulas nos valores
         res.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBio)
 
+    }
+    function converter(){
+        let caamBio1 = Number(txtnr1.value)
+        if(txtnr1.value.length ==0){
+            alert('Porfavor, digite o valor que desaja cambiar')
+
+        }
     }
     
 
