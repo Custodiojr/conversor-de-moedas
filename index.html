@@ -24,17 +24,7 @@
         <a href="libra.html" target="_blank"> <img src="figurinhas/reino-unido.png" width="25px" alt=""></a>
     </p>
 </div>
-   
-   <p>
-   <!---- <label>Moeda:</label>
-    <a href="metical.html" id="moedas"> Metical</a>
-    <select name="Moeda" onchange="conVerter(this.value)">
-        <option onclick="metical()" selected value=" "> Metical </a></option>
-        <option value="USD"> Dolar </option>
-        <option value="RZD" > Rand </option>
-        <option value="EUR"> Euro </option>
-    </select>-->
-</p>
+ 
 <p id="inputt">
     
     <input type="search"  placeholder="1 metical eqivale  a 0,016 dolares" name="txt" on id="txt1">
@@ -59,7 +49,7 @@
 
     function converter(){
         let camBio = Number(txtnr.value)
-        if(camBio.length == 0){
+        if(txtnr.value.length ==0){
             alert('Porfavor, digite o valor que desaja cambiar')
         } else{
              camBio = camBio * 63.83
