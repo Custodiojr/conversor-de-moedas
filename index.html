@@ -10,7 +10,7 @@
 <body>
     <h1> Dolinho</h1>
    <p>
-       <input type="search"  placeholder="1 USD eqivale  a 63,83 Meticais" name="txt" on id="txt">
+       <input type="number"  placeholder="1 USD eqivale  a 63,83 Meticais" name="txt" on id="txt">
        
    </p>
    
@@ -35,12 +35,12 @@
         <option value="EUR"> Euro </option>
     </select>-->
 </p>
-<p id="button">
+<p id="inputt">
     
     <input type="search"  placeholder="1 metical eqivale  a 0,016 dolares" name="txt" on id="txt1">
 
 </p>
-<p>
+<p id="button">
     <button onclick="converter()">Converter</button>
 </p>
 <p>
@@ -52,6 +52,7 @@
     &copy; Todos os direitos reservados <br> JANEIRO DE 2022
 </footer>
 <script>
+
     let txtnr = document.getElementById('txt')
     let txtnr1 = document.getElementById('txt1')
     let res = document.getElementById('res')
@@ -61,10 +62,10 @@
         if(camBio.length == 0){
             alert('Porfavor, digite o valor que desaja cambiar')
         } else{
-             camBio = camBio * 63,83
+             camBio = camBio * 63.83
         }
        
-        res.innerHTML = `O valor sera de: ${camBio} Meticais`
+        res.innerHTML = `O valor sera de: ${camBio} Meticais `
     }
 
 

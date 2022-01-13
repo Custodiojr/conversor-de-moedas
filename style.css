@@ -21,6 +21,7 @@ h1{
     text-align: right;
     font-size: 2vw;
 }
+
 #txt1{
   background-color: rgb(241, 232, 197);
   height: 4vw;
@@ -51,8 +52,19 @@ div:hover{
   color: brown; 
   
 } 
-#button{
+#inputt{
   padding-top: 1vw;
+}
+
+#button{
+  padding-top: 2vw;
+}
+button{
+  border: none;
+  background-color: rgb(236, 181, 41);
+  color: white;
+  height: 4vw;
+  width: 14vw;
 }
 
 footer{
