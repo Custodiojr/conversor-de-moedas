@@ -36,9 +36,12 @@
     </select>-->
 </p>
 <p id="button">
-    <!--<button onclick="converter()">Converter</button>-->
-    <input type="search"  placeholder="1 metical eqivale  a 0,016 dolares" name="txt" on id="txt">
+    
+    <input type="search"  placeholder="1 metical eqivale  a 0,016 dolares" name="txt" on id="txt1">
 
+</p>
+<p>
+    <button onclick="converter()">Converter</button>
 </p>
 <p>
     <div id="res">
@@ -49,14 +52,21 @@
     &copy; Todos os direitos reservados <br> JANEIRO DE 2022
 </footer>
 <script>
- let a = document.getElementById('moedas')
- let res = document.getElementById('res')
+    let txtnr = document.getElementById('txt')
+    let txtnr1 = document.getElementById('txt1')
+    let res = document.getElementById('res')
 
- 
+    function converter(){
+        let camBio = Number(txtnr.value)
+        if(camBio.length == 0){
+            alert('Porfavor, digite o valor que desaja cambiar')
+        } else{
+             camBio = camBio * 63,83
+        }
+       
+        res.innerHTML = `O valor sera de: ${camBio} Meticais`
+    }
 
-function converter(){
-    console.log('funcionou')
-}
 
 </script>
   
