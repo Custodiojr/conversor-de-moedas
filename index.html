@@ -13,6 +13,14 @@
        <input type="number"  placeholder="1 USD eqivale  a 63,83 Meticais" name="txt" on id="txt">
        
    </p>
+   <p id="button">
+    <button onclick="converter1()">Converter</button>
+</p>
+<p>
+    <div id="res1">
+
+    </div>
+</p>
    
 <div> Moedas 	&#9660; :
     <p> 
@@ -27,7 +35,7 @@
  
 <p id="inputt">
     
-    <input type="search"  placeholder="1 metical eqivale  a 0,016 dolares" name="txt" on id="txt1">
+    <input type="number"  placeholder="1 metical eqivale  a 0,016 dolares" name="txt" on id="txt1">
 
 </p>
 <p id="button">
@@ -47,32 +55,26 @@
     let txtnr = document.getElementById('txt')
     let txtnr1 = document.getElementById('txt1')
     let res = document.getElementById('res')
+    let res1 = document.getElementById('res1')
 
-    function converter(){
-        let camBio = Number(txtnr.value)
-        if(txtnr.value.length ==0){
-            alert('Porfavor, digite o valor que desaja cambiar')
-        } else{
-             camBio = camBio * 63.83
-          //para apagar automaticamente o valor cambiado na txtnr   
-        } txtnr.value=''
-         //para voltar a por o cursor a piscar
-          txtnr.focus()
-            //para formatar os valores cambiados, ou seja, colocar as virgulas nos valores
-        res.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBio)
+     function converter1(){
+      let camBioMZN = Number(txtnr.value)
+     
 
-    }
-    function converter(){
-        let caamBio1 = Number(txtnr1.value)
-        if(txtnr1.value.length ==0){
-            alert('Porfavor, digite o valor que desaja cambiar')
+      camBioMZN = camBioMZN * 63.83
+      res1.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBioMZN)
+      
 
-        }
-    }
-    
-
+     
+     }
+     function converter(){
+        let camBioDolar = Number(txtnr1.value)
+        camBioDolar = camBioDolar * 0.016
+      res.innerHTML = new Intl.NumberFormat('en-IN', { style:'currency', currency:'USD' }).format(`${camBioDolar}`)
+       
+     }
 
 </script>
-  
 </body>
-</html>
+
+</html

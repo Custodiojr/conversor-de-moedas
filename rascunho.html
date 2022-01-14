@@ -1,0 +1,18 @@
+<body>
+    let camBioMZN = Number(txtnr.value)
+    let camBioDolar = Number(txtnr1.value)
+    let camBioUSD = camBioDolar* 0.016
+    if(txtnr.value.length==0 && txtnr1.value.length==0){
+    alert('Porfavor, digite o valor que desaja cambiar')
+    }else if(txtnr.value.length==0){
+    
+    
+    
+    camBioMZN = camBioMZN * 63.83
+    } else{
+    let camBioUSD = camBioUSD * 0.016
+    }
+    res.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBioMZN)
+    res.innerHTML = new Intl.NumberFormat('en-IN', { style:'currency', currency:'USD' }).format(`${camBioDolar*0.016}`)
+    
+</body>

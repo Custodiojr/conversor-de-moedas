@@ -1,0 +1,59 @@
+    function converter(){
+        let camBio = Number(txtnr.value)
+        if(txtnr.value.length ==0){
+            alert('Porfavor, digite o valor que desaja cambiar')
+        } else{
+             camBio = camBio * 63.83
+          //para apagar automaticamente o valor cambiado na txtnr   
+        } txtnr.value=''
+         //para voltar a por o cursor a piscar
+          txtnr.focus()
+            //para formatar os valores cambiados, ou seja, colocar as virgulas nos valores
+        res.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBio)
+
+    }
+   function converter(){
+        let caamBio1 = Number(txtnr1.value)
+        if(txtnr1.value.length ==0){
+            //alert('Porfavor, digite o valor que desaja cambiar')
+
+        }
+    }
+
+
+
+
+
+//para apagar automaticamente o valor cambiado na txtnr   
+txtnr.value=''
+         //para voltar a por o cursor a piscar
+          txtnr.focus()
+            //para formatar os valores cambiados, ou seja, colocar as virgulas nos valores
+        res.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBio)
+
+
+
+
+
+
+
+
+
+else{
+        
+        camBio = camBio * 63.83
+          //para apagar automaticamente o valor cambiado na txtnr   
+        }txtnr.value=''
+         //para voltar a por o cursor a piscar
+          txtnr.focus()
+            //para formatar os valores cambiados, ou seja, colocar as virgulas nos valores e a respetiva moeda
+         res.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBio)
+
+         if(txtnr1.value.length==0){
+            let camBio2 = camBio1 * 0.016
+
+            }  res.innerHTML = new Intl.NumberFormat('en-IN', { style:'currency', currency:'USD' }).format(camBio2)
+      
+        
+
+    }
