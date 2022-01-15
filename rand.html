@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Reauzinho</title>
+    <title> Rand</title>
     <link rel="stylesheet" href="style.css">
- 
 </head>
 <body>
-    <p id="logo">
-        <img src="logo/logo.png" width="400px" alt="logo do site">
-    </p>
-    <h1> Reauzinho</h1>
+    
+        <p id="logo">
+            <img src="logo/logo.png" width="400px" alt="logo do site">
+        </p>
+    
+    <h1> Rand</h1>
    <p>
-       <input type="number"  placeholder="1 real eqivale  a 11,53 Meticais" name="txt" on id="txt">
+       <input type="number"  placeholder="1 Rand eqivale  a 4,15 Meticais" name="txt" on id="txt">
        
    </p>
    <p id="button">
@@ -33,23 +34,15 @@
         <a href="rand.html" target="_blank"> <img src="figurinhas/africa-do-sul.png" width="25px" alt="figurinha da bandeira da africa-do-sul"></a>
     </p>
     <p>
-        <a href="euro.html" target="_blank" > <img src="figurinhas/portugal.png" width="25px" alt="figurinha da bandeira de portugal"></a>
-        <a href="libra.html" target="_blank"> <img src="figurinhas/reino-unido.png" width="25px" alt="figurinha da bandeira do reino-unido"></a>
+        <a href="euro.html" target="_blank" > <img src="figurinhas/portugal.png" width="25px" alt=" figurinha da bandeira de portugal"></a>
+        <a href="libra.html" target="_blank"> <img src="figurinhas/reino-unido.png" width="25px" alt=" figurinha da bandeira da Inglaterra"></a>
     </p>
 </div>
-   
-   <p>
-   <!---- <label>Moeda:</label>
-    <a href="metical.html" id="moedas"> Metical</a>
-    <select name="Moeda" onchange="conVerter(this.value)">
-        <option onclick="metical()" selected value=" "> Metical </a></option>
-        <option value="USD"> Dolar </option>
-        <option value="RZD" > Rand </option>
-        <option value="EUR"> Euro </option>
-    </select>-->
-</p>
-<p id="button">
-    <input type="number"  placeholder="1 metical eqivale  a 0,087 Meticais" name="txt" on id="txt1">
+ 
+<p id="inputt">
+    
+    <input type="number"  placeholder="1 Metical eqivale  a 0,29 Rand" name="txt" on id="txt1">
+
 </p>
 <p id="button">
     <button onclick="converter()">Converter</button>
@@ -59,33 +52,35 @@
 
     </div>
 </p>
+
 <footer>
     &copy; Todos os direitos reservados <br> JANEIRO DE 2022
 </footer>
 <script>
-  let txtnr = document.getElementById('txt')
+
+    let txtnr = document.getElementById('txt')
     let txtnr1 = document.getElementById('txt1')
     let res = document.getElementById('res')
     let res1 = document.getElementById('res1')
 
-    function converter1(){
+     function converter1(){
       let camBioMZN = Number(txtnr.value)
      
 
-      camBioMZN = camBioMZN * 11.53
+      camBioMZN = camBioMZN * 4.15
       res1.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBioMZN)
       
 
      
      }
      function converter(){
-        let camBioReal = Number(txtnr1.value)
-        camBioReal = camBioReal * 0.016
-      res.innerHTML = new Intl.NumberFormat('pt-BR', { style:'currency', currency:'BRL' }).format(`${camBioReal}`)
+        let camBioRand = Number(txtnr1.value)
+        camBioRand = camBioRand * 0.29
+       res.innerHTML = new Intl.NumberFormat('en-IN', { style:'currency', currency:'ZAR' }).format(`${camBioRand}`)
        
      }
 
 </script>
-  
 </body>
-</html>
+
+</html

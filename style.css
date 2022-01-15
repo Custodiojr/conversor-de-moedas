@@ -6,7 +6,10 @@
 body{
     text-align: center;
     padding-top: 200px;
-    background-color: whitesmoke;
+    
+}
+#logo{
+  
 }
 h1{
     color: rgb(190, 150, 49);
