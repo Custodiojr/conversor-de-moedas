@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Libra</title>
+    <title>  Libra Esterlina</title>
     <link rel="stylesheet" href="style.css">
    
 </head>
 <body>
-    <h1> Libra</h1>
+    <h1> Libra Esterlina</h1>
    
    <p>
-       <input type="search"  placeholder="1 Libra eqivale  a 86,97 meticais" name="txt" on id="txt">
+       <input type="number"  placeholder="1 GBP eqivale  a 86,97 meticais" name="txt" on id="txt">
        
    </p>
+   <p id="button">
+    <button onclick="converter1()">Converter</button>
+</p>
+<p>
+    <div id="res1">
+
+    </div>
+</p>
    
    
 <div> Moedas 	&#9660; :
@@ -40,7 +48,10 @@
     </select>-->
 </p>
 <p id="button">
-    <input type="search"  placeholder="1 metical eqivale  a 0,011 libras" name="txt" on id="txt">
+    <input type="number"  placeholder="1 metical eqivale  a 0,011 libras" name="txt" on id="txt1">
+</p>
+<p id="button">
+    <button onclick="converter()">Converter</button>
 </p>
 <p>
     <div id="res">
@@ -51,14 +62,27 @@
     &copy; Todos os direitos reservados <br> JANEIRO DE 2022
 </footer>
 <script>
- let a = document.getElementById('moedas')
- let res = document.getElementById('res')
+let txtnr = document.getElementById('txt')
+let txtnr1 = document.getElementById('txt1')
+let res = document.getElementById('res')
+let res1 = document.getElementById('res1')
 
+ function converter1(){
+  let camBioMZN = Number(txtnr.value)
+ 
 
+  camBioMZN = camBioMZN * 86.97
+  res1.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBioMZN)
+  
 
-function converter(){
-    console.log('funcionou')
-}
+ 
+ }
+ function converter(){
+    let camBioLibra = Number(txtnr1.value)
+    camBioLibra = camBioLibra* 0.011
+   res.innerHTML = new Intl.NumberFormat('en-IN', { style:'currency', currency:'GBP' }).format(`${camBioLibra}`)
+   
+ }
 
 </script>
   

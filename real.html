@@ -11,9 +11,17 @@
 <body>
     <h1> Reauzinho</h1>
    <p>
-       <input type="search"  placeholder="1 real eqivale  a 11,46 Meticais" name="txt" on id="txt">
+       <input type="number"  placeholder="1 real eqivale  a 11,53 Meticais" name="txt" on id="txt">
        
    </p>
+   <p id="button">
+    <button onclick="converter1()">Converter</button>
+</p>
+<p>
+    <div id="res1">
+
+    </div>
+</p>
    
 <div> Moedas 	&#9660; :
     <p> 
@@ -37,7 +45,10 @@
     </select>-->
 </p>
 <p id="button">
-    <input type="search"  placeholder="1 metical eqivale  a 0,087 Meticais" name="txt" on id="txt">
+    <input type="number"  placeholder="1 metical eqivale  a 0,087 Meticais" name="txt" on id="txt1">
+</p>
+<p id="button">
+    <button onclick="converter()">Converter</button>
 </p>
 <p>
     <div id="res">
@@ -48,14 +59,27 @@
     &copy; Todos os direitos reservados <br> JANEIRO DE 2022
 </footer>
 <script>
- let a = document.getElementById('moedas')
- let res = document.getElementById('res')
+  let txtnr = document.getElementById('txt')
+    let txtnr1 = document.getElementById('txt1')
+    let res = document.getElementById('res')
+    let res1 = document.getElementById('res1')
 
- 
+    function converter1(){
+      let camBioMZN = Number(txtnr.value)
+     
 
-function converter(){
-    console.log('funcionou')
-}
+      camBioMZN = camBioMZN * 11.53
+      res1.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBioMZN)
+      
+
+     
+     }
+     function converter(){
+        let camBioReal = Number(txtnr1.value)
+        camBioReal = camBioReal * 0.016
+      res.innerHTML = new Intl.NumberFormat('pt-BR', { style:'currency', currency:'BRL' }).format(`${camBioReal}`)
+       
+     }
 
 </script>
   
