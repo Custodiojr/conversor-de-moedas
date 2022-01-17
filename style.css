@@ -37,7 +37,8 @@ h1{
   background-color: rgb(241, 232, 197);
   height: 8vw;
   border: none;
-  width: 50vw;
+  min-width: 72vw;
+  max-width: 50vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif ;
   text-align: center;
   font-size: 2vw;
@@ -47,7 +48,7 @@ h1{
   outline: none;
 }
 div{
-    padding-top: 1vw;
+ padding-top: 1vw;
 }
 
 div > p {
