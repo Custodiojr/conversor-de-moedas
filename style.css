@@ -111,6 +111,9 @@ th,td {
   padding: 10px;
 
 }
+tr:nth-child(even){
+  background-color: rgb(241, 232, 197);
+}
 thead{
  background-color: rgb(236, 181, 41);
  color: white;
