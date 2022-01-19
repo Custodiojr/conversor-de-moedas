@@ -95,12 +95,16 @@ article p{
     text-indent: 30px;
     line-height: 2em;
 }
+#titulo{
+  padding-top: 20px;
+}
 main{
   min-width: 40vw;
   max-width: 70vw;
   margin: auto;
 }
 table{
+  
   border-collapse: collapse;
   width: 60vw;
   text-align: center;
