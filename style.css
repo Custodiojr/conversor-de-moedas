@@ -1,5 +1,7 @@
 @charset "UTF-8";
 *{ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
 }
 
@@ -130,6 +132,6 @@ thead{
 }
 footer{
    
-   background-color: rgb(192, 153, 56);
+   background-color: rgb(236, 181, 41);
    color: white;
 } 
