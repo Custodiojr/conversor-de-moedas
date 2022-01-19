@@ -89,6 +89,12 @@ article{
   
  
 }
+article p{
+  margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
 main{
   min-width: 40vw;
   max-width: 70vw;
