@@ -22,7 +22,7 @@ h1{
 #txt{
     background-color: rgb(241, 232, 197);
     border-radius: 1vw;
-    height: 8vw;
+    height: 7vw;
     border: none;
     width: 50vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
@@ -35,12 +35,12 @@ h1{
    outline: none;
 }
 
+
 #txt1{
   background-color: rgb(241, 232, 197);
-  height: 8vw;
+  height: 7vw;
   border: none;
-  min-width: 72vw;
-  max-width: 50vw;
+  min-width: 50vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif ;
   text-align: center;
   font-size: 2vw;
@@ -49,6 +49,7 @@ h1{
 #txt1:focus{
   outline: none;
 }
+
 div{
  padding-top: 1vw;
 }
@@ -81,10 +82,27 @@ button{
   border: none;
   background-color: rgb(236, 181, 41);
   color: white;
-  height: 8vw;
-  width: 25vw;
-  font-size: 2.5vw;
+  height: 4vw;
+  width: 15vw;
+  font-size: 1vw;
   border-radius: 1vw;
+}
+@media (max-width: 500px){
+  #txt{
+    width: 80vw;
+    height: 10vw;
+  }
+  #txt1{
+    width: 80vw;
+    height: 10vw;
+
+  }
+  button{
+    height: 9vw;
+    width: 25vw;
+    font-size: 2.5vw;
+
+  }
 }
 article{
   padding-top: 100px;
