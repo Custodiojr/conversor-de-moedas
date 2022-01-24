@@ -73,39 +73,36 @@
             </thead>
             <tbody>
                 <tr>
-                    <td> $1 Dólar Bill</td>
-                    <td> 63,83 Meticais </td>
+                    <td> £ 1 (Escócia)  </td>
+                    <td> 86,42 Meticais </td>
                 </tr>
                 <tr>
                     <td>
-                        $2 Dólar Bill
+                        £ 5
                     </td>
-                    <td>127,66 Meticais </td>
+                    <td>430,00 Meticais </td>
                 </tr>
                 <tr>
                     <td>
-                        $5 Dólar Bill
+                        £ 10
                     </td>
                     <td>
-                        319,15 Meticais
+                        860,00 Meticais
                     </td>
                 </tr>
                 <tr>
-                    <td>$10 Dólar Bill </td>
-                    <td> 638,30 Meticais</td>
+                    <td> £ 20 </td>
+                    <td> 1720,00 Meticais</td>
                 </tr>
                 <tr>
-                    <td> $20 Dólar Bill</td>
-                    <td> 1276,60 Meticais</td>
+                    <td> £ 50 </td>
+                    <td> 4300,00 Meticais</td>
                 </tr>
                 <tr>
-                    <td> $50 Dólar Bill</td>
-                    <td> 3191,50 Meticais</td>
+                    <td> £ 100 (Escócia e Irlanda do Norte somente)</td>
+                    <td> 8600,00 Meticais</td>
                 </tr>
-                <tr>
-                    <td> $100 Dólar Bill</td>
-                    <td> 6383,00 Meticais</td>
-                </tr>
+               
             </tbody>
         </table>
      <h1 id="titulo"> Como esta a Libra Esterlina Hoje? </h1>
@@ -128,6 +125,7 @@
 
 </footer>
 <script>
+    
 let txtnr = document.getElementById('txt')
 let txtnr1 = document.getElementById('txt1')
 let res = document.getElementById('res')
@@ -137,7 +135,7 @@ let res1 = document.getElementById('res1')
   let camBioMZN = Number(txtnr.value)
  
 
-  camBioMZN = camBioMZN * 86.83
+  camBioMZN = camBioMZN * 86,42
   res1.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBioMZN)
   
 
