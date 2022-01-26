@@ -18,11 +18,12 @@ body{
   
 }
 h1{
-    color: rgb(190, 150, 49);
+    
     padding-bottom: 10px;
 }
 #txt{
-    background-color: rgb(241, 232, 197);
+   /* background-color: rgb(241, 232, 197);*/
+    background-color: whitesmoke;
     border-radius: 1vw;
     height: 7vw;
     border: none;
@@ -39,7 +40,8 @@ h1{
 
 
 #txt1{
-  background-color: rgb(241, 232, 197);
+  /*background-color: rgb(241, 232, 197);*/
+  background-color: whitesmoke;
   height: 7vw;
   border: none;
   min-width: 50vw;
@@ -82,7 +84,8 @@ div:hover{
 }
 button{
   border: none;
-  background-color: rgb(236, 181, 41);
+ /* background-color: rgb(236, 181, 41);*/
+ background-color: lightslategray;
   color: white;
   height: 4vw;
   width: 15vw;
@@ -145,10 +148,12 @@ th,td {
 
 }
 tr:nth-child(even){
-  background-color: rgb(241, 232, 197);
+  /*background-color: rgb(241, 232, 197);*/
+  background-color: rgb(233, 233, 233);
 }
 thead{
- background-color: rgb(236, 181, 41);
+ /*background-color: rgb(236, 181, 41);*/
+ background-color: lightslategray;
  color: white;
 }
 a{
@@ -162,6 +167,7 @@ a:hover{
  
 }
 footer{
-  background-color: rgb(236, 181, 41);
+  /*background-color: rgb(236, 181, 41);*/
+  background-color: lightslategray;
   color: white;
 }
