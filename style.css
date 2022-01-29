@@ -166,6 +166,12 @@ a:hover{
   font-size: 15px;
  
 }
+#banner{
+  width: 50vw;
+  height: 20vh;
+  background-color: whitesmoke;
+  margin: auto;
+}
 footer{
   /*background-color: rgb(236, 181, 41);*/
   background-color: lightslategray;
