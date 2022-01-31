@@ -21,7 +21,7 @@
     
         <h1> Rand</h1>
        <p>
-           <input type="number"  placeholder="1 Rand equivale  a 4,20 Meticais" name="txt" on id="txt">
+           <input type="number"  placeholder="1 Rand equivale  a 4,10 Meticais" name="txt" on id="txt">
     
        </p>
        <p id="button">
@@ -152,7 +152,7 @@
       let camBioMZN = Number(txtnr.value)
      
 
-      camBioMZN = camBioMZN * 4.20
+      camBioMZN = camBioMZN * 4.10
       res1.innerHTML = new Intl.NumberFormat('pt-MZ', { style:'currency', currency:'MZN' }).format(camBioMZN)
       
 
